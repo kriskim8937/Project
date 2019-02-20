@@ -12,7 +12,7 @@ class Carou extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://cdn.pixabay.com/photo/2016/06/18/17/42/image-1465348_960_720.jpg"
+              src="https://images.unsplash.com/photo-1548625361-58a9b86aa83b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1052&q=80"
               alt="First slide"
             />
             <Carousel.Caption>
