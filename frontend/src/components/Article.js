@@ -22,7 +22,7 @@ class Article extends React.Component {
         height: '100px',
         padding: '30px',  
         border: '1px solid blue',
-        margin: 'auto'
+    
       };
       const { open } = this.state;
       return (

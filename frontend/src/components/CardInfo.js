@@ -22,10 +22,10 @@ class CardInfo extends Component {
 
   render() {
     const style = {
-      width: '10rem', 
+      width: '8.5rem', 
       border: '1px solid gray',
       padding: '3px',
-      margin: '30px'
+      margin: '5px'
     };
     const style2 = {
       border: '1px solid gray',

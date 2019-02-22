@@ -6,7 +6,7 @@ class Header extends Component {
 
     render() {
         const style = { 
-            // border: '1px solid gray',
+            border: '1px solid gray',
             fontsize: '90px'
           };
         return (
@@ -18,15 +18,15 @@ class Header extends Component {
                         <Col style ={style} sm={4}>sm=4</Col>
                     </Row> */}
                     <Row>
-                        <Col style ={style} sm= {8}><h2>
+                        <Col style ={style} sm= {10}><h2>
                         ★Gangnam All-you-can-drink Lounge Party 
-                        (BYO food Availabfefefele)
+                        (BYO food Available)
                         </h2>
                         </Col>
                         
-                        <Col style ={style} sm >Are you going? 28 people going</Col>
+                        <Col style ={style} sm ={4}>Are you going? 28 people going</Col>
                     </Row>
-                </Container>;
+                </Container>
       </div>
         );
     }

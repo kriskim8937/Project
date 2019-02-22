@@ -9,6 +9,23 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+
+app.listen(8080, () => {
+  console.log('Express App on port 8080!');
+});
+
+app.use((req, res, next) => {
+  console.log('안녕!');
+  next();
+});
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+app.get('/about', (req, res) => {
+  res.send('About World!');
+});
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');

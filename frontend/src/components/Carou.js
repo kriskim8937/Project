@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
 import './Carou.css';
+import groupstudy from '../imgs/group-study.jpg'
+import groupstudy2 from '../imgs/groupstudy.jpg'
+import groupstudy3 from '../imgs/groupstudy3.jpg'
 class Carou extends Component {
   
   render() {
-    
+    console.log(groupstudy);
     return (
       
       <div className="App">
@@ -12,7 +15,8 @@ class Carou extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://images.unsplash.com/photo-1548625361-58a9b86aa83b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1052&q=80"
+              src={groupstudy}
+              
               alt="First slide"
             />
             <Carousel.Caption>
@@ -23,8 +27,8 @@ class Carou extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://www.w3schools.com/w3css/img_lights.jpg"
-              alt="Third slide" 
+              src={groupstudy2}
+              alt="Second slide" 
             />
 
             <Carousel.Caption>
@@ -35,22 +39,11 @@ class Carou extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              src={groupstudy3}
               alt="Third slide"
             />
             <Carousel.Caption>
               <h3>Third slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt="Third slide"
-            />
-            <Carousel.Caption>
-              <h3>Fourth slide label</h3>
               <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
             </Carousel.Caption>
           </Carousel.Item>
