@@ -8,7 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
-
+const db = require('./db.js');
 
 app.listen(8080, () => {
   console.log('Express App on port 8080!');
@@ -19,12 +19,12 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
-app.get('/about', (req, res) => {
-  res.send('About World!');
-});
+// app.get('/', (req, res) => {
+//   res.send('Hello World!');
+// });
+// app.get('/about', (req, res) => {
+//   res.send('About World!');
+// });
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -38,7 +38,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-
+db();
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

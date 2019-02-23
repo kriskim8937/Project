@@ -16,7 +16,7 @@ class CardList extends Component {
       info => (
         <div>
         <Col margin = '-50px'>
-        <CardInfo  margin = '-50px'
+        <CardInfo  
           key={info.id}
           info={info}
           onRemove={onRemove}
